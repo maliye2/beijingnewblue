@@ -38,13 +38,11 @@ img{
 .prDis{
 	width: 100%;
 	height: 100%;
-	background-color: pink;
 	display: flex;
 }
 .prDisLeft{
 	width: 20%;
 	height: 100%;
-	background-color: yellow;
 	padding-left: 135px;
 	box-sizing: border-box;
 }
@@ -58,7 +56,7 @@ img{
 	background-color: #f2f2f2;
 	padding-top: 78px;
 	padding-left: 88px;
-	padding-right: 280px;
+	padding-right: 140px;
 	box-sizing: border-box;
 }
 
@@ -113,7 +111,7 @@ img{
 	background-color:#ffffff;
 	position: absolute;
 	top: 50%;
-	left: 50%;
+	left: 65%;
 	transform: translateY(-50%) translateX(25%);
 }
 .outBoxT{
@@ -147,6 +145,8 @@ img{
 @media screen and (min-width: 0px) and (max-width: 1030px){
 	.technologyCen{
 		flex-direction: column;
+		padding-left: 5px;
+		padding-right: 5px;
 	}
 	.technologyShow{
 		margin: 0 auto;
@@ -264,6 +264,45 @@ img{
 .proPicBottomRi:hover .barrier{
 	opacity: .7;
 }
+.prDis{
+	width: 100%;
+	height: 100%;
+	display: flex;
+}
+.prDisLeft{
+	width: 20%;
+	height: 100%;
+	padding-left: 135px;
+	box-sizing: border-box;
+}
+.prDisLeftCh,.prDisLeftEn{
+	writing-mode: vertical-rl;
+	font-size: 26px;
+	letter-spacing:12px;
+	font-weight: bold;
+	margin-right: 14px;
+	float: left;
+	margin-top: 96px;
+}
+.prDisLeftEn{
+	margin-right: 0;
+	margin-top: 92px;
+}
+.prDisRight{
+	width: 80%;
+	padding-left: 195px;
+	box-sizing: border-box;
+	padding-top: 96px;
+}
+.prDisRightCh{
+	font-size:18px;
+	line-height:26px;
+}
+.prDisRightEn{
+	text-align: left;
+	font-size: 12px;
+	line-height: 22px;
+}
 /*图片部分的响应*/
 @media screen and (min-width: 0px) and (max-width: 1100px){
    .proPicTop{
@@ -310,18 +349,18 @@ img{
 .technologyShowBox{
 	display: flex;
 	width: 100%;
-	justify-content: space-between;
+	justify-content: space-around;
 	box-sizing: border-box;
 	margin-bottom: 10px;
 }
 @media screen and (min-width: 0px) and (max-width: 1150px){
 	.technology{
-		padding-left: 10px;
-		padding-right: 10px;
+		padding-left: 0px;
+		padding-right: 0px;
 	}
 	.technologyShowBox{
 		justify-content: space-around;
-		flex-direction: column; 
+		/*flex-direction: column; */
 		margin-bottom: 10px;
 	}
 	.technologyTex{
@@ -330,4 +369,37 @@ img{
 	.technologyShow{
 		margin-bottom: 10px;
 	}
+}
+@media screen and (min-width: 0px) and (max-width: 980px){
+	.technologyShowBox{
+		flex-direction: column;
+	}
+}
+@media screen and (min-width: 0px) and (max-width: 1110px){
+   .prDis{
+   	flex-direction: column;
+   }
+   .prDisLeft{
+   	width: 100%;
+   	padding-left: 0px;
+   
+   }
+   .prDisLeftCh,.prDisLeftEn{
+   		width: 100%;
+   		writing-mode: horizontal-tb;
+   		clear: both;
+   		margin-top: 10px;
+   		text-align: center;
+   }
+   .prDisRight{
+   	width: 100%;
+   	padding-left: 0px;
+   	padding-top: 60px;
+   }
+   .prDisRightCh{
+   	text-align: center;
+   }
+   .prDisRightEn{
+   	text-align: center;
+   }
 }
