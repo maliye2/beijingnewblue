@@ -35,35 +35,4 @@ window.onload=function(){
             other=0;
         }
     }
-    let mySwiper = new Swiper ('.swiper-container', {
-        loop: true, // 循环模式选项;
-        autoplay: {
-            delay: 3000,
-            stopOnLastSlide: false,
-            disableOnInteraction: false,
-        },
-        // 如果需要分页器
-        pagination: {
-            el: '.swiper-pagination',
-            type: 'fraction',
-        },
-
-        // 如果需要前进后退按钮
-        navigation: {
-            nextEl: '.button-next',
-            prevEl: '.button-prev',
-        },
-    })
-    document.getElementById("rightExeTopBox").onclick=function(){
-        document.querySelector(".Ask").style.display="block"
-        document.querySelector(".bodyShow").style.display="block";
-    }
-    document.querySelector(".bodyShow").onclick=function(){
-        this.style.display="none";
-        document.querySelector(".Ask").style.display="none"
-    }
-    window.document.body.onresize=function(){
-        let nowBodyW=window.document.body.offsetWidth;
-        console.log(nowBodyW)
-    }
 }

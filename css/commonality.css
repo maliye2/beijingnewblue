@@ -27,7 +27,7 @@ img{
 	padding-left: 100px;
 	padding-right: 120px;
 	box-sizing: border-box;
-	background-color: #515151;
+	background-color: #88ada6;
 	position: fixed;
 	top: 0;
 	z-index: 100;
@@ -42,7 +42,7 @@ img{
 	position: absolute;
 	width: 135px;
 	height:201px;
-	background-color: #515151;
+	background-color: #88ada6;
 	top: 60px;
 	left: 44px;
 	z-index: 60;
@@ -83,24 +83,24 @@ img{
 	font-size: 12px;
 }
 .Chinese a{
-	color: #ffffff;
+	color: #56004f;
 	cursor: default;
 }
 .English a{
-	color: #cccccc;
+	color: #4c221b;
 	cursor: default;
 }
 .Chinese a:hover{
-	color:yellow;
+	color:#eebed0;
 }
 .English a:hover{
-	color:yellow;
+	color:#eebed0;
 }
 /*二级菜单*/
 /*drodDisplay*/
 .drodDisplay,.case,.download{
 	width: 100%;
-	background-color: #515151;
+	background-color: #88ada6;
 	position: absolute;
 	left: 0px;
 	top: 60px;
@@ -175,12 +175,20 @@ img{
 }
 /*userBox*/
 .userBox{
-	width: 30px;
-	height: 30px;
+	width: 40px;
+	height: 40px;
 	margin-top: 10px;
 	position: relative;
 	border: 1px solid #787878;
+	border-radius: 50%;
+	background-image: url(../img/user.png);
+	background-size: 40px 40px;
+
 }
+.userBox img{
+	display: none;
+}
+
 .userBox:hover .userlogin{
 	display: block;
 }
