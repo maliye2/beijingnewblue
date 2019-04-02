@@ -24,6 +24,17 @@ window.onload=function(){
 		//获取此前的高度
 		let nowBodyTop=window.document.body.scrollTop
 	}
+	
+	document.getElementById("rightExeTopBox").onclick=function(){
+		document.querySelector(".Ask").style.display="block"
+		document.querySelector(".bodyShow").style.display="block";
+	}
+	document.querySelector(".bodyShow").onclick=function(){
+		this.style.display="none";
+		document.querySelector(".Ask").style.display="none"
+	}
+
+
 
 	window.onresize=function(){
 		 let nowBodyWd=document.body.offsetWidth;
@@ -33,14 +44,7 @@ window.onload=function(){
 			document.querySelector("#FileBox").style.height="488px";
 		}
 	};
-	document.getElementById("rightExeTopBox").onclick=function(){
-		document.querySelector(".Ask").style.display="block"
-		document.querySelector(".bodyShow").style.display="block";
-	}
-	document.querySelector(".bodyShow").onclick=function(){
-		this.style.display="none";
-		document.querySelector(".Ask").style.display="none"
-	}
+	
 	//以下代码必须放到最后
 	//使用案例页面轮播图js
 	
