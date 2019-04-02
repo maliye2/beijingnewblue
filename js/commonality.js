@@ -34,18 +34,15 @@ window.onload=function(){
 		document.querySelector(".Ask").style.display="none"
 	}
 
+	document.getElementById("callMe").onclick=function(e){
+		e.preventDefault();
+		let nowBodyHeight=document.body.offsetHeight;
+		document.documentElement.scrollTop=nowBodyHeight
+	}
 
-
-	window.onresize=function(){
-		 let nowBodyWd=document.body.offsetWidth;
-		if(nowBodyWd<700){
-			document.querySelector("#FileBox").style.height="864px";
-		}else{
-			document.querySelector("#FileBox").style.height="488px";
-		}
-	};
-	
-	//以下代码必须放到最后
-	//使用案例页面轮播图js
+	document.getElementsByClassName("pageUp")[0].onclick=function(){
+		//获取当前滚动条高度
+		document.documentElement.scrollTop=0;		
+	}
 	
 }

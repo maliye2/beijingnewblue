@@ -51,4 +51,22 @@ window.onload=function(){
 		this.style.display="none";
 
 	}
+	window.onresize=function(){
+		 let nowBodyWd=document.body.offsetWidth;
+		if(nowBodyWd<700){
+			document.querySelector("#FileBox").style.height="864px";
+		}else{
+			document.querySelector("#FileBox").style.height="488px";
+		}
+	};
+	document.getElementById("callMe").onclick=function(e){
+		e.preventDefault();
+		let nowBodyHeight=document.body.offsetHeight;
+		document.documentElement.scrollTop=nowBodyHeight
+	}
+
+	document.getElementsByClassName("pageUp")[0].onclick=function(){
+		//获取当前滚动条高度
+		document.documentElement.scrollTop=0;		
+	}
 }
