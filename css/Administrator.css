@@ -1,13 +1,13 @@
 .admTable{
     width: 100%;
     /*height: ;*/
-    padding-top: 78px;
+    padding-top: 120px;
     box-sizing: border-box;
-    background-color: #f8f8f8;
+    background-color: #f0fcff;
     padding-bottom: 470px;
 }
 .AmTb{
-	width: 855px;
+	width: 1050px;
 	margin:0 auto;
 	font-size:12px;
 	line-height: 36px;
@@ -57,7 +57,7 @@
 	margin-right: 14px;
 	border-radius: 5px; 
 }
-.jump{
+#jump{
 	width: 45px;
 	height: 26px;
 	border: 1px solid #d9d9d9;
