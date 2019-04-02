@@ -69,4 +69,8 @@ window.onload=function(){
 		//获取当前滚动条高度
 		document.documentElement.scrollTop=0;		
 	}
+	document.getElementsByClassName("subBtn")[0].onclick=function(){
+			document.querySelector(".bodyShow").style.display="none";
+			document.querySelector(".Ask").style.display="none"
+		}
 }
