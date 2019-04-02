@@ -55,10 +55,17 @@ window.onload=function(){
         },
     })
     //返回顶端
-    document.getElementsByClassName("pageUp")[0].onclick=function(e){
-        //获取此前的高度
-        let nowBodyTop=window.document.body.scrollTop
+    document.getElementById("callMe").onclick=function(e){
+        e.preventDefault();
+        let nowBodyHeight=document.body.offsetHeight;
+        document.documentElement.scrollTop=nowBodyHeight
     }
+
+    document.getElementsByClassName("pageUp")[0].onclick=function(){
+        //获取当前滚动条高度
+        document.documentElement.scrollTop=0;       
+    }
+    
     
     document.getElementById("rightExeTopBox").onclick=function(){
         document.querySelector(".Ask").style.display="block"
