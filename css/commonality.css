@@ -736,3 +736,10 @@ img{
 	box-sizing: border-box;
 	background-color: #e0eee8;
 }
+#bnner_titles{
+	width: 600px;
+	height: 180px;
+	position: absolute;
+	left: 550px;
+	top: 90px;
+}
